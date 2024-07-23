@@ -1,0 +1,205 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffccf9, #fcc2ff, #a2cfff, #d5ffcc, #ffd5cd);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: #000;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin-left: 1rem;
+    font-family: 'Pacifico', cursive; /* Adding a stylish font */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin-right: 1rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Lobster', cursive; /* Adding a stylish font */
+}
+
+.section {
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#about, #skills, #contact {
+    text-align: left;
+}
+
+.about-subsections {
+    margin-top: 1rem;
+}
+
+.about-subsections h3 {
+    font-size: 1.5rem;
+    color: #ff8c00; /* Orange color for subsections headings */
+    margin-bottom: 0.5rem;
+}
+
+.about-subsections p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: inherit; /* Inherit text color */
+}
+
+.about-subsections ul {
+    list-style-type: disc; /* Use disc bullets */
+    padding-left: 1.5rem; /* Add padding for bullets */
+}
+
+.about-subsections li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: inherit; /* Inherit text color */
+}
+
+.contact-info strong {
+    font-weight: bold; /* Make the text bold */
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.dark-theme {
+    background: linear-gradient(135deg, #3a3a3a, #4a4a4a, #2a2a2a, #1a1a1a, #0a0a0a);
+    color: #fff;
+}
+
+.dark-theme header {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.dark-theme .contact-info p {
+    color: #fff;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 1.5rem; /* Add padding for bullets */
+}
+
+ul li {
+    text-indent: -1.5rem; /* Remove space between bullet and text */
+    padding-left: 1.5rem;
+}
+
+/* Make the text before the colon bold in the skills section */
+#skills ul li strong {
+    font-weight: bold;
+}
+
+/* Adding padding to the left and right of the header elements */
+header h1 {
+    margin-left: 1rem;
+}
+
+nav ul {
+    margin-right: 1rem;
+}
+
+/* Home Section Styling */
+.home-content .intro {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #6a0dad; /* Purple color */
+}
+
+.home-content .name {
+    font-family: 'Lobster', cursive; /* Stylish font for name */
+    font-size: 2.5rem;
+    color: #ff4500; /* Orange-red color */
+}
+
+.home-content .description {
+    font-size: 1.5rem;
+    color: #333; /* Dark gray color */
+}
+
+.home-content .highlight {
+    font-weight: bold;
+    color: #ff8c00; /* Orange color */
+}
+
+/* Contact Section Styling */
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.contact-item {
+    flex: 1 1 calc(45% - 1.5rem);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center; /* Center-align text for better presentation */
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-item strong {
+    font-weight: bold;
+    color: #ff4500; /* Orange-red color for labels */
+}
+
+.contact-item span, .contact-item a {
+    color: #333; /* Dark gray color for text */
+}
+
+.contact-item a {
+    color: #6a0dad; /* Purple color for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #ff8c00; /* Orange color on hover */
+}
+
